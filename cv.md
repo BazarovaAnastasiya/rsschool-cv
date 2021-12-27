@@ -22,3 +22,58 @@ Belarus, Minsk
 ## About me
 
 At the moment I am working as an HTML developer and I am looking for an opportunity to change my career to the position of a junior frontend developer after graduating from RS School
+
+## Skills:
+
+- HTML5
+- CSS3
+- JavaScript (Basics)
+- Visual Studio Code
+- Git/GitHub
+- graphic editors ( figma, zeplin, photoshop)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=BazarovaAnastasiya)](https://github.com/anuraghazra/github-readme-stats&theme=dark)
+
+## Education
+
+**RSSchool**
+
+- 'JavaScript/Front-end. Stage 0'
+
+in progress
+
+**Udemy**
+
+- JavaScript
+
+  2021 - present
+
+**IT-INCUBATOR**
+
+- HTML/CSS Developer
+
+  2021 - 2021
+
+**Web hero school**
+
+- HTML/CSS Developer
+
+  2019 – 2019
+
+**International Humanitarian and Economic Institute, Minsk**
+
+- Faculty of Finance and Economics Economics and Enterprise Management (by industry)
+
+  2005 - 2010
+
+**"Industrial Pedagogical College" Educational Institution "Republican Institute of Vocational Education", Minsk**
+
+- commercial activityeconomist for commercial activities; information systems technician
+
+  2001 – 2005
+
+## Experience
+
+since 2021: HTML developer
+
+since 2020: Html-css editor (freelance)
