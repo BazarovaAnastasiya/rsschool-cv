@@ -77,3 +77,17 @@ in progress
 since 2021: HTML developer
 
 since 2020: Html-css editor (freelance)
+
+## Code Example
+
+```
+function sum(a, b) {
+return a + b;
+}
+```
+
+## Languages
+
+Russian - native speaker
+
+English - A1
