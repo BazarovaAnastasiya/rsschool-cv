@@ -5,11 +5,270 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV</title>
+  <title>cv</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,800;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+  <div class="container">
+    <header>
+      <nav>
+        <ul class="nav">
+          <li class="nav__item"> <a class="nav__link" href="#about">about me</a> </li>
+          <li class="nav__item"><a class="nav__link" href="#сontact">Contact</a>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+          <li class="nav__item"><a class="nav__link" href="#education">Education</a></li>
+          <li class="nav__item"><a class="nav__link" href="#experience">Experience</a></li>
+          <li class="nav__item"><a class="nav__link" href="#code">Code Example</a></li>
+          <li class="nav__item"><a class="nav__link" href="#languages">Languages</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <div class="about__content">
+          <div class="about__content-foto">
+            <img src="img/my.jfif" alt="Bazarova Anastasiya foto">
+          </div>
+          <div class="about__content-info">
+            <h1 class="about__content-title">Beginner Front-end web developer
+              <span class="about__content-subtitle">Anastasiya Bazarova</span>
+            </h1>
+            <p class="about_content-description">
+              H
+              i! my name is Anastasiya
+              At the moment I am working as an HTML developer and I am looking for an opportunity to change my career to
+              the
+              position
+              of a junior frontend developer after graduating from RS School
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="сontact">
+        <h2 class="contact__title title">Contact information</h2>
+        <ul class="contact__list">
+          <li class="contact__item">
+            <img class="contact__item-img"
+              src="https://st2.depositphotos.com/5266903/12233/v/950/depositphotos_122331734-stock-illustration-map-marker-flat-rounded-vector.jpg"
+              alt="location icon" height='30'>
+            <address class="contact__item-text">Minsk, Belarus</address>
+          </li>
+          <li class="contact__item">
+            <img class="contact__item-img" src="https://pixy.org/src/10/102126.png" alt="phone icon" height='30'>
+            <a class="contact__item-text" href="tel:+375291218105">+375291218105</a>
+          </li>
+          <li class="contact__item">
+            <img class="contact__item-img"
+              src="https://static.tildacdn.com/tild3361-3564-4336-a261-396563393232/photo.png" alt="email icon"
+              height='30'>
+            <a class="contact__item-text"
+              href="mailto:anastasiya.bazarova.85@gmail.com">anastasiya.bazarova.85@gmail.com</a>
+          </li>
+          <li class="contact__item">
+            <h3 class="contact__item-title">my social links</h3>
+            <ul class="contact__item-list">
+              <li><a href="https://github.com/BazarovaAnastasiya"><img
+                    src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='30'></a>
+              </li>
+              <li><a href="https://www.linkedin.com/in/anastasiya-bazarova-9a9043172/"><img
+                    src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin'
+                    height='30'></a></li>
+              <li><a href="https://www.instagram.com/bazarova_anastasiya_it/"><img
+                    src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg' alt='instagram'
+                    height='30'></a></li>
+            </ul>
 
+          </li>
+        </ul>
+      </section>
+      <section id="skills">
+        <h2 class="skills__title title">my skills</h2>
+        <div class="skills__container">
+          <div class="skills__wrap">
+            <div class="skills__wrap-image">
+              <img class="skills__wrap-img" src="img/html-css.png" alt="html css icon">
+            </div>
+            <div class="skills__wrap-level">
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars--no"></span>
+            </div>
+
+          </div>
+          <div class="skills__wrap">
+            <div class="skills__wrap-image">
+              <img class="skills__wrap-img" src="img/js.png" alt="js icon">
+            </div>
+            <div class="skills__wrap-level">
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars--no"></span>
+              <span class="skills__wrap-level-stars--no"></span>
+              <span class="skills__wrap-level-stars--no"></span>
+            </div>
+
+          </div>
+          <div class="skills__wrap">
+            <div class="skills__wrap-image">
+              <img class="skills__wrap-img" src="img/git.png" alt="git icon">
+            </div>
+            <div class="skills__wrap-level">
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars--no"></span>
+              <span class="skills__wrap-level-stars--no"></span>
+            </div>
+
+          </div>
+          <div class="skills__wrap">
+            <div class="skills__wrap-image">
+              <img class="skills__wrap-img" src="img/vs.png" alt="vs icon">
+            </div>
+            <div class="skills__wrap-level">
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars"></span>
+            </div>
+          </div>
+          <div class="skills__wrap">
+            <div class="skills__wrap-image">
+              <img class="skills__wrap-img" src="img/ps.png" alt="ps icon">
+            </div>
+            <div class="skills__wrap-level">
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars--no"></span>
+              <span class="skills__wrap-level-stars--no"></span>
+              <span class="skills__wrap-level-stars--no"></span>
+            </div>
+
+          </div>
+          <div class="skills__wrap">
+            <div class="skills__wrap-image">
+              <img class="skills__wrap-img" src="img/zeplin.png" alt="zeplin icon">
+            </div>
+            <div class="skills__wrap-level">
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars"></span>
+              <span class="skills__wrap-level-stars--no"></span>
+              <span class="skills__wrap-level-stars--no"></span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section id="education">
+        <h3 class="education__title title">
+          education
+        </h3>
+        <ul class="education__list">
+          <li class="education__item">
+            <h3 class="education__item-title"> RSSchool</h3>
+
+            <p class="education__item-description">'JavaScript/Front-end. Stage 0'
+              <br>
+              in progress
+            </p>
+          </li>
+          <li class="education__item">
+            <h3 class="education__item-title">Udemy</h3>
+
+            <p class="education__item-description">JavaScript
+              <br>
+              2021 - present
+            </p>
+          </li>
+          <li class="education__item">
+            <h3 class="education__item-title">IT-INCUBATOR</h3>
+
+            <p class="education__item-description">HTML/CSS Developer
+              <br>
+              2021 - 2021
+            </p>
+          </li>
+          <li class="education__item">
+            <h3 class="education__item-title">Web hero school</h3>
+
+            <p class="education__item-description">HTML/CSS Developer
+              <br>
+              2019 – 2019
+            </p>
+          </li>
+          <li class="education__item">
+            <h3 class="education__item-title">International Humanitarian and Economic Institute, Minsk</h3>
+
+            <p class="education__item-description">Faculty of Finance and Economics Economics and Enterprise Management
+              (by industry)<br>
+
+              2005 - 2010</p>
+          </li>
+          <li class="education__item">
+            <h3 class="education__item-title">"Industrial Pedagogical College" Educational Institution "Republican
+              Institute of Vocational Education",
+              Minsk</h3>
+
+            <p class="education__item-description">commercial activityeconomist for commercial activities; information
+              systems technician <br>
+              2001 – 2005</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h2 class="experience__title title">Experience</h2>
+        <ul class="experience__list">
+          <li class="experience__item"><span>since 2021:</span>
+            HTML developer</li>
+
+          <li class="experience__item"><span>since 2020:</span>
+            Html-css editor (freelance)</li>
+        </ul>
+      </section>
+      <section id="code">
+        <h2 class="code__title title">Code Example</h2>
+        <div class="code__example">
+          <a class="code__example-link" href="https://bazarovaanastasiya.github.io/js-cardGalleries/" target="_blank"
+            rel="noopener noreferrer">
+            <img src="img/code.png" alt="code">
+          </a>
+        </div>
+
+      </section>
+      <section id="languages">
+        <h2 class="languages__titile title">Languages</h2>
+        <div class="languages__wrap">
+          <div class="languages__name">Russian</div>
+          <div class="languages__level"><img src="img/circle.png" alt="circle"></div>
+        </div>
+        <div class="languages__wrap">
+          <div class="languages__name">English</div>
+          <div class="languages__level"><img src="img/circle2.png" alt="circle"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer__wrap container">
+      <div>© 2022 Anastasiya Bazarova</div>
+      <a class="footer__link" href="https://rs.school/js-stage0/" target="_blank">
+        <img src="img/rss.svg" alt="rss">
+      </a>
+    </div>
+  </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>
