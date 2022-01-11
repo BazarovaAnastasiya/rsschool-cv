@@ -26,6 +26,7 @@
           <li class="nav__item"><a class="nav__link" href="#education">Education</a></li>
           <li class="nav__item"><a class="nav__link" href="#experience">Experience</a></li>
           <li class="nav__item"><a class="nav__link" href="#code">Code Example</a></li>
+          <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
           <li class="nav__item"><a class="nav__link" href="#languages">Languages</a></li>
         </ul>
       </nav>
@@ -84,14 +85,13 @@
                     src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg' alt='instagram'
                     height='30'></a></li>
             </ul>
-
           </li>
         </ul>
       </section>
       <section id="skills">
         <h2 class="skills__title title">my skills</h2>
-        <div class="skills__container">
-          <div class="skills__wrap">
+        <ul class="skills__container">
+          <li class="skills__wrap">
             <div class="skills__wrap-image">
               <img class="skills__wrap-img" src="img/html-css.png" alt="html css icon">
             </div>
@@ -102,9 +102,8 @@
               <span class="skills__wrap-level-stars"></span>
               <span class="skills__wrap-level-stars--no"></span>
             </div>
-
-          </div>
-          <div class="skills__wrap">
+          </li>
+          <li class="skills__wrap">
             <div class="skills__wrap-image">
               <img class="skills__wrap-img" src="img/js.png" alt="js icon">
             </div>
@@ -115,9 +114,8 @@
               <span class="skills__wrap-level-stars--no"></span>
               <span class="skills__wrap-level-stars--no"></span>
             </div>
-
-          </div>
-          <div class="skills__wrap">
+          </li>
+          <li class="skills__wrap">
             <div class="skills__wrap-image">
               <img class="skills__wrap-img" src="img/git.png" alt="git icon">
             </div>
@@ -128,9 +126,8 @@
               <span class="skills__wrap-level-stars--no"></span>
               <span class="skills__wrap-level-stars--no"></span>
             </div>
-
-          </div>
-          <div class="skills__wrap">
+          </li>
+          <li class="skills__wrap">
             <div class="skills__wrap-image">
               <img class="skills__wrap-img" src="img/vs.png" alt="vs icon">
             </div>
@@ -141,8 +138,8 @@
               <span class="skills__wrap-level-stars"></span>
               <span class="skills__wrap-level-stars"></span>
             </div>
-          </div>
-          <div class="skills__wrap">
+          </li>
+          <li class="skills__wrap">
             <div class="skills__wrap-image">
               <img class="skills__wrap-img" src="img/ps.png" alt="ps icon">
             </div>
@@ -153,9 +150,8 @@
               <span class="skills__wrap-level-stars--no"></span>
               <span class="skills__wrap-level-stars--no"></span>
             </div>
-
-          </div>
-          <div class="skills__wrap">
+          </li>
+          <li class="skills__wrap">
             <div class="skills__wrap-image">
               <img class="skills__wrap-img" src="img/zeplin.png" alt="zeplin icon">
             </div>
@@ -166,9 +162,8 @@
               <span class="skills__wrap-level-stars--no"></span>
               <span class="skills__wrap-level-stars--no"></span>
             </div>
-
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
       <section id="education">
         <h3 class="education__title title">
@@ -193,7 +188,7 @@
           </li>
           <li class="education__item">
             <h3 class="education__item-title">IT-INCUBATOR</h3>
-
+            \
             <p class="education__item-description">HTML/CSS Developer
               <br>
               2021 - 2021
@@ -226,7 +221,6 @@
           </li>
         </ul>
       </section>
-
       <section id="experience">
         <h2 class="experience__title title">Experience</h2>
         <ul class="experience__list">
@@ -237,15 +231,57 @@
             Html-css editor (freelance)</li>
         </ul>
       </section>
+      <section id="prodjercts">
+        <h2 class="projects__title title">Projects</h2>
+        <ul class="projects__list">
+          <li class="projects__item">
+            <a class="projects__item-link" href="https://bazarovaanastasiya.github.io/webpage/" target="_blank"
+              rel="noopener noreferrer">
+              <img src="/img/web.png" alt="smoothie projec" title="smoothie projec">
+            </a>
+          </li>
+          <li class="projects__item">
+            <a class="projects__item-link" href="https://bazarovaanastasiya.github.io/js-cardGalleries/" target="_blank"
+              rel="noopener noreferrer">
+              <img src="/img/card.png" alt="card Galleries" title="card galleries projec">
+            </a>
+          </li>
+          <li class="projects__item">
+            <a class="projects__item-link" href="https://axion-projec-zhdmo5pbl.now.sh/" target="_blank"
+              rel="noopener noreferrer">
+              <img src="/img/axion.png" alt="axion projec" title="axion projec">
+            </a>
+          </li>
+        </ul>>
+      </section>
       <section id="code">
         <h2 class="code__title title">Code Example</h2>
-        <div class="code__example">
-          <a class="code__example-link" href="https://bazarovaanastasiya.github.io/js-cardGalleries/" target="_blank"
-            rel="noopener noreferrer">
-            <img src="img/code.png" alt="code">
-          </a>
-        </div>
-
+        <code class="code__example">
+         <pre>
+          startBtn.addEventListener('click', (event) => {
+          event.preventDefault()
+          screens[0].classList.add('up')
+          })
+          
+          timeList.addEventListener('click', event =>
+          {
+          if (event.target.classList.contains
+          ('time-btn')) {
+          time = parseInt(event.target.getAttribute('data-time'))
+          screens[1].classList.add('up')
+          startGame()
+          }
+          })
+          board.addEventListener('click', event =>{
+          if (event.target.classList.contains
+          ('circle')) {
+          scorre++
+          event.target.remove()
+          createRandomCircle()
+          }
+          })
+         </pre>
+        </code>
       </section>
       <section id="languages">
         <h2 class="languages__titile title">Languages</h2>
@@ -263,6 +299,8 @@
   <footer class="footer">
     <div class="footer__wrap container">
       <div>© 2022 Anastasiya Bazarova</div>
+      <a href="https://github.com/BazarovaAnastasiya"><img
+          src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="github" height="30"></a>
       <a class="footer__link" href="https://rs.school/js-stage0/" target="_blank">
         <img src="img/rss.svg" alt="rss">
       </a>
