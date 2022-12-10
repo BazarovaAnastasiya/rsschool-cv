@@ -114,5 +114,5 @@ if (tabs) {
 
 ## Languages
 
-Russian - native speaker
-English - A1
+- Russian - native speaker
+- English - A1
