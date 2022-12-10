@@ -12,7 +12,7 @@ Belarus, Minsk
 
 - [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='30'>](https://github.com/BazarovaAnastasiya)
 - [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='30'>](https://www.linkedin.com/in/anastasiya-bazarova-9a9043172/)
-- [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg' alt='instagram' height='30'>](https://www.instagram.com/bazarova_anastasiya_it/)
+- [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg' alt='instagram' height='30'>](https://www.instagram.com/baz.a_/)
 
 ### contacts for communication
 
@@ -115,5 +115,4 @@ if (tabs) {
 ## Languages
 
 Russian - native speaker
-
 English - A1
