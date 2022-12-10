@@ -82,7 +82,35 @@ since 2020: Html-css editor (freelance)
 
 ## Code Example
 
-
+```
+const tabs = document.querySelector(".portfolio__nav");
+const tabsBtn = document.querySelectorAll(".portfolio__nav-btn");
+const tabsItem = document.querySelectorAll(".portfolio__content");
+const portfolioImages = document.querySelectorAll(".gallery__img");
+const season = ["winter", "spring", "summer", "autumn"];
+tabsBtn.forEach(onTabClick);
+function onTabClick(item) {
+  let currentBtn = item;
+  let tabId = currentBtn.getAttribute("data-season");
+  let t = tabId;
+  item.addEventListener("click", function () {
+    if (!currentBtn.classList.contains("")) {
+      console.log(tabId);
+      portfolioImages.forEach(
+        (img, index) =>
+          (img.src = "./assets/img/" + t + "/" + (index + 1) + ".jpg")
+      );
+      tabsBtn.forEach(function (item) {
+        item.classList.remove("button--color");
+      });
+      currentBtn.classList.add("button--color");
+    }
+  });
+}
+if (tabs) {
+  document.querySelector(".portfolio__nav-btn").click();
+}
+```
 
 ## Languages
 
