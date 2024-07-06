@@ -394,6 +394,11 @@ select {
   justify-content: center;
   gap: 20px;
 }
+.projects__item-link{
+  font-size: inherit;
+  color: #404040;
+text-decoration: none;
+}
 
 .projects__item-link,
 .projects__item-link img {
