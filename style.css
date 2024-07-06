@@ -207,7 +207,6 @@ select {
 }
 
 .card__inner {
-  margin-top: 30px;
   background-color: rgba(240, 248, 255, 0.199);
   padding: 0 20px;
   border-radius: 0 4px 4px 0;
@@ -409,6 +408,7 @@ transition: transform 1s ease-in;
 
 .footer__wrapp {
   display: flex;
+  gap: 20px;
   justify-content: center;
   align-items: center;
 }
