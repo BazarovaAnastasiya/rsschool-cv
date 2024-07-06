@@ -427,6 +427,7 @@ transition: transform 1s ease-in;
 .footer__wrapp {
   display: flex;
   justify-content: center;
+  gap: 30px;
   align-items: center;
 }
 
