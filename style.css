@@ -1,0 +1,434 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: #404040;
+  overflow-x: hidden;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+    -o-transition-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  z-index: 1;
+}
+.cv {
+  display: flex;
+}
+.cv-header{
+  position: relative;
+  width: 100%;
+}
+.cv-header__list{
+  z-index: 2;
+  position: fixed;
+  height: 60px;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgba(250, 235, 215, 0.589)
+}
+.cv-header__link{
+  z-index: 9;
+  margin-right: 20px;
+  text-transform: uppercase;
+  color: #4c7753;
+  text-decoration: none;
+  pointer-events: all;
+}
+.cv-header__link:hover{
+  text-decoration: overline;
+}
+.card-started {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  max-width: 35%;
+  padding: 20px;
+  background-color: antiquewhite;
+}
+
+.profile__photo {
+  height: auto;
+  width: 65%;
+  margin: 0 auto;
+  background: -o-linear-gradient(315deg, rgba(181, 156, 98, 0.4) 0, rgba(181, 156, 98, 0.01) 100%);
+  background: linear-gradient(135deg, rgba(181, 156, 98, 0.4) 0, rgba(181, 156, 98, 0.01) 100%);
+  padding: 13px;
+  border-radius: 0 20% 0 20%;
+  overflow: hidden;
+}
+
+.profile__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 30%;
+}
+
+.profile__title {
+  font-size: 34px;
+  text-align: center;
+  color: #323232;
+}
+
+.profile__subtitle {
+  font-size: 24px;
+  text-align: center;
+  background: rgba(109, 147, 204, 0.4) 0;
+}
+
+.profile__contact-list {
+  display: flex;
+  gap: 20px;
+}
+
+.profile__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 26px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-top: 1px solid;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.profile__social-link {
+  font-size: 30px;
+  color: rgba(76, 119, 83, 0.4);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  padding:0 20px 40px;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(251, 253, 255, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(251, 253, 255, 0.2);
+}
+
+.card__wrap {
+  width: 100%;
+}
+
+.card__content {
+  margin-bottom: 20px;
+}
+
+.card__inner {
+  margin-top: 30px;
+  background-color: rgba(240, 248, 255, 0.199);
+  padding: 0 20px;
+  border-radius: 0 4px 4px 0;
+}
+
+.title {
+  font-size: 24px;
+  color: #101010;
+  position: relative;
+  margin: 10px 0 15px;
+}
+
+.title span {
+  font-size: 24px;
+  color: #4c7753;
+  position: relative;
+}
+
+.title:before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background: -o-linear-gradient(315deg, rgba(120, 204, 109, 0.4) 0, rgba(120, 204, 109, 0.01) 100%);
+  background: linear-gradient(135deg, rgba(120, 204, 109, 0.4) 0, rgba(120, 204, 109, 0.01) 100%);
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -khtml-border-radius: 30px;
+  background: -o-linear-gradient(315deg, rgba(76, 119, 83, 0.4) 0, rgba(76, 119, 83, 0.01) 100%);
+  background: linear-gradient(135deg, rgba(76, 119, 83, 0.4) 0, rgba(76, 119, 83, 0.01) 100%);
+}
+
+.skills {
+  margin-bottom: 20px;
+}
+
+.skills__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.skills__item {
+  display: flex;
+  align-items: center;
+}
+
+.skills__circles .progress {
+  position: relative;
+  font-size: 90px;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  background: #eee;
+}
+
+.skills__circles .progress *,
+.skills__circles .progress:after,
+.skills__circles .progress:before {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.skills__circles .progress span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 90px;
+  font-size: 17px;
+  color: #323232;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 2;
+  border-color: #4c7753;
+}
+
+.skills__circles .progress:after {
+  position: absolute;
+  top: 0.09em;
+  left: 0.09em;
+  display: block;
+  content: " ";
+  border-radius: 50%;
+  background-color: #fff;
+  width: 0.82em;
+  height: 0.82em;
+}
+
+.fill,
+.bar {
+  position: absolute;
+  width: 0.82em;
+  height: 0.82em;
+  clip: rect(0, 0.5em, 1em, 0);
+  border: 0.09em solid #78cc6d;
+  border-radius: 50%;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.p95 .bar {
+  -ms-transform: rotate(324deg);
+  -webkit-transform: rotate(324deg);
+  transform: rotate(324deg);
+}
+
+.resume__wrapp {
+  margin-bottom: 20px;
+}
+
+.resume__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.resume__item {
+  max-width: max-content;
+}
+
+.resume__date {
+  margin: 0 0 11px;
+  padding: 0 5px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #4c7753;
+  opacity: 0.8;
+}
+
+.resume__name {
+  font-size: 18px;
+  color: #323232;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.resume__company {
+  font-weight: 900;
+  opacity: 0.5;
+  margin-bottom: 5px;
+}
+
+
+
+.name {
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+
+
+
+.projects__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projects__item-link,
+.projects__item-link img {
+  height: auto;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.projects__item-link img {
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(251, 253, 255, 0.4);
+  box-shadow: 0px 5px 10px 2px rgba(251, 253, 255, 0.4);
+}
+
+.projects__item-link img:hover {
+transform: scale(2);
+transition: transform 1s ease-in;
+}
+
+.footer {
+  width: 100%;
+  background-color: #1010106e;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.footer__wrapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__link {
+  text-decoration: none;
+  width: 50px;
+  color: #eee;
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo {
+  width: 100px;
+  height: auto;
+}
+
+.footer__text {
+  text-align: center;
+}
+.footer .fa-github:before {
+  font-size: 50px;
+}
